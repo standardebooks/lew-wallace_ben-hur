@@ -98,6 +98,9 @@ section > header [epub|type~="epigraph"] + *{
 	section > header [epub|type~="epigraph"]{
 		display: table;
 	}
+
+[epub|type~="epigraph"] span.elision{
+	font-style: normal;
 }
 /* End epigraphs in section headers */
 
