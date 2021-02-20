@@ -2,62 +2,99 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 @namespace xml "http://www.w3.org/XML/1998/namespace";
 
-/* abbreviations */
-abbr.acronym,
-abbr.era,
-abbr.temperature{
-	font-variant: all-small-caps;
-}
-/* end of abbreviations */
-
-/* blockquote in foreign-language */
-blockquote[xml|lang]{
-	font-style: italic;
-}
-/* end of foreign-language blockquote */
-
-/* bridgeheads */
-[epub|type~="bridgehead"]{
-	display: inline-block;
-	font-style: italic;
-	max-width: 60%;
-	text-align: justify;
-	text-indent: 0;
-}
-
-[epub|type~="bridgehead"] i{
-	font-style: normal;
-}
-/* end of bridgeheads */
-
-/* All dedications */
-section[epub|type~="dedication"]{
+blockquote > header{
 	text-align: center;
 }
 
-section[epub|type~="dedication"] > *{
-	display: inline-block;
-	margin: auto;
-	margin-top: 3em;
-	max-width: 80%;
+q{
+	font-style: italic;
 }
 
-@supports(display: flex){
-	section[epub|type~="dedication"]{
-		align-items: center;
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		min-height: calc(98vh - 3em);
-		padding-top: 3em;
-	}
-
-	section[epub|type~="dedication"] > *{
-		margin: 0;
-	}
+table{
+	margin: 1em auto;
 }
-/* End all dedications */
+
+/* location-specific */
+#chapter-2-7 > blockquote,
+#chapter-6-4 > blockquote{
+	font-variant: small-caps;
+	text-align: center;
+}
+
+#chapter-2-7 > blockquote b,
+#chapter-6-4 > blockquote b{
+	font-size: 150%;
+	text-transform: lowercase;
+}
+
+#chapter-3-6 > blockquote{
+	border: solid 2px;
+	margin: 1em auto;
+	padding: .5em;
+	text-align: center;
+	width: 15em;
+}
+
+#chapter-4-5 > blockquote p,
+#chapter-5-7 blockquote p,
+#chapter-5-11 blockquote p{
+	text-indent: 0;
+}
+
+#chapter-4-5 > blockquote > footer{
+	margin-top: 0;
+	text-align: center;
+}
+
+#chapter-5-1 blockquote,
+#chapter-5-2 blockquote div,
+#chapter-5-3 .stanza{
+	margin: 1em 0;
+}
+
+#chapter-5-1 [epub|type~="z3998:salutation"]{
+	font-style: italic;
+	font-variant: normal;
+	text-align: center;
+}
+
+#chapter-4-17 blockquote header > p #chapter-5-2 blockquote header,
+#chapter-5-2 blockquote div header,
+#chapter-5-3 .stanza,
+#chapter-5-16 blockquote,
+#chapter-7-4 blockquote,
+#chapter-8-10 blockquote:first-of-type,
+#chapter-8-10 blockquote:nth-of-type(2),
+#chapter-8-10 blockquote:nth-of-type(3),
+#chapter-8-10 blockquote:nth-of-type(4){
+	text-align: center;
+}
+
+#chapter-5-2 [epub|type~="z3998:salutation"]{
+	font-style: italic;
+	font-variant: normal;
+}
+
+#chapter-5-7 tr td:nth-of-type(3n){
+	padding-left: 1em;
+	text-align: right;
+}
+
+#chapter-5-7 tr:last-of-type td:nth-of-type(3){
+	border-top: solid 2px;
+}
+
+#chapter-6-1 table{
+	border-collapse: collapse;
+	display: table;
+	text-align: center;
+}
+
+#chapter-6-1 table tbody td{
+	border: solid 2px;
+	padding: .5em 1em;
+}
+/* end of location-specific */
 
 /* All epigraphs */
 [epub|type~="epigraph"]{
@@ -99,8 +136,9 @@ section > header [epub|type~="epigraph"] + *{
 		display: table;
 	}
 
-[epub|type~="epigraph"] span.elision{
-	font-style: normal;
+	[epub|type~="epigraph"] span.elision{
+		font-style: normal;
+	}
 }
 /* End epigraphs in section headers */
 
@@ -138,42 +176,7 @@ section[epub|type~="epigraph"] > *{
 }
 /* End full-page epigraphs */
 
-/* images */
-figure img{
-	display: block;
-	margin: auto;
-	max-width: 100%;
-}
-
-figure + p{
-	text-indent: 0;
-}
-
-figcaption{
-	font-size: .75em;
-	font-style: italic;
-	margin: 1em;
-}
-
-/* full page */
-figure.full-page{
-	margin: 0;
-	max-height: 100%;
-	break-before: page;
-	break-after: page;
-	break-inside: avoid;
-	text-align: center;
-}
-
-/* aligned with text */
-figure{
-	margin: 1em auto;
-	text-align: center;
-}
-/* end of images
-
 /* letters */
-
 [epub|type~="z3998:letter"] header{
 	text-align: right;
 }
@@ -203,22 +206,26 @@ footer{
 /* end of letters */
 
 /* poem/verse/song */
-[epub|type~="z3998:poem"] p{
+[epub|type~="z3998:song"] p,
+[epub|type~="z3998:verse"] p{
 	text-align: left;
 	text-indent: 0;
 }
 
-[epub|type~="z3998:poem"] p + p{
+[epub|type~="z3998:song"] p + p,
+[epub|type~="z3998:verse"] p + p{
 	margin-top: 1em;
 }
 
-[epub|type~="z3998:poem"] p > span{
+[epub|type~="z3998:song"] p > span,
+[epub|type~="z3998:verse"] p > span{
 	display: block;
 	text-indent: -1em;
 	padding-left: 1em;
 }
 
-[epub|type~="z3998:poem"] p > span + br{
+[epub|type~="z3998:song"] p > span + br,
+[epub|type~="z3998:verse"] p > span + br{
 	display: none;
 }
 
@@ -232,6 +239,21 @@ p span.i2{
 	padding-left: 3em;
 }
 
+p span.i5{
+	text-indent: -1em;
+	padding-left: 6em;
+}
+
+p span.i8{
+	text-indent: -1em;
+	padding-left: 9em;
+}
+
+p span.i9{
+	text-indent: -1em;
+	padding-left: 10em;
+}
+
 /* elision ⋮ */
 span.elision{
 	margin: .5em;
@@ -240,77 +262,12 @@ span.elision{
 /* end of poem/verse/song */
 
 /* drama */
-/* dramatis personae */
-[epub|type~="z3998:dramatis-personae"]{
-	text-align: center;
-}
-
-[epub|type~="z3998:dramatis-personae"] ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-[epub|type~="z3998:dramatis-personae"] ul li{
-	margin: 1em;
-	font-style: italic;
-}
-/* end of dramatis personae */
-
-[epub|type~="z3998:drama"],
-[epub|type~="z3998:drama"] table{
+[epub|type~="z3998:drama"]{
 	border-collapse: collapse;
 	margin: 1em auto;
 }
 
-[epub|type~="z3998:drama"] tr:first-child td{
-	padding-top: 0;
-}
-
-[epub|type~="z3998:drama"] tr:last-child td{
-	padding-bottom: 0;
-}
-
-[epub|type~="z3998:drama"] td{
-	vertical-align: top;
-	padding: .5em;
-}
-
-[epub|type~="z3998:drama"] td:last-child{
-	padding-right: 0;
-}
-
-[epub|type~="z3998:drama"] td:first-child{
-	padding-left: 0;
-}
-
-[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
-	hyphens: none;
-	-epub-hyphens: none;
-	text-align: right;
-	width: 20%;
-}
-
-[epub|type~="z3998:stage-direction"]{
-	font-style: italic;
-}
-
-[epub|type~="z3998:stage-direction"]::before{
-	content: "(";
-	font-style: normal;
-}
-
-[epub|type~="z3998:stage-direction"]::after{
-	content: ")";
-	font-style: normal;
-}
-
 [epub|type~="z3998:persona"]{
 	font-variant: all-small-caps;
-}
-
-section[epub|type~="z3998:scene"] > p{
-	margin: 1em auto;
-	width: 75%;
 }
 /* end of drama */
