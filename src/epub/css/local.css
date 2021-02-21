@@ -15,6 +15,11 @@ table{
 }
 
 /* location-specific */
+#book-7 p:last-of-type{
+	margin-top: 1em;
+	text-align: center;
+}
+
 #chapter-2-7 > blockquote,
 #chapter-6-4 > blockquote{
 	font-variant: small-caps;
