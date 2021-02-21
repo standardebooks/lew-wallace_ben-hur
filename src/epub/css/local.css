@@ -47,7 +47,6 @@ table{
 }
 
 #chapter-5-1 blockquote,
-#chapter-5-2 blockquote div,
 #chapter-5-3 .stanza{
 	margin: 1em 0;
 }
@@ -58,16 +57,17 @@ table{
 	text-align: center;
 }
 
-#chapter-4-17 blockquote header > p #chapter-5-2 blockquote header,
-#chapter-5-2 blockquote div header,
+#chapter-4-17 blockquote header > p,
+#chapter-5-2 blockquote header,
 #chapter-5-3 .stanza,
 #chapter-5-16 blockquote,
-#chapter-7-4 blockquote,
+#chapter-7-4 blockquote header,
 #chapter-8-10 blockquote:first-of-type,
 #chapter-8-10 blockquote:nth-of-type(2),
 #chapter-8-10 blockquote:nth-of-type(3),
 #chapter-8-10 blockquote:nth-of-type(4){
 	text-align: center;
+	text-indent: 0;
 }
 
 #chapter-5-2 [epub|type~="z3998:salutation"]{
@@ -103,7 +103,6 @@ table{
 	-epub-hyphens: none;
 }
 
-[epub|type~="epigraph"] em,
 [epub|type~="epigraph"] i{
 	font-style: normal;
 }
@@ -124,7 +123,7 @@ section > header [epub|type~="epigraph"]{
 	display: inline-block;
 	margin: auto;
 	max-width: 80%;
-	text-align: left;
+	text-align: initial;
 }
 
 section > header [epub|type~="epigraph"] + *{
@@ -152,7 +151,7 @@ section[epub|type~="epigraph"] > *{
 	margin: auto;
 	margin-top: 3em;
 	max-width: 80%;
-	text-align: left;
+	text-align: initial;
 }
 
 @supports(display: flex){
@@ -192,28 +191,20 @@ footer{
 }
 
 [epub|type~="z3998:sender"],
-[epub|type~="z3998:recipient"],
 [epub|type~="z3998:salutation"],
 [epub|type~="z3998:signature"]{
 	font-variant: small-caps;
-}
-
-[epub|type~="z3998:postscript"]{
-	margin-top: 1em;
-	text-indent: 0;
-	text-align: left;
 }
 /* end of letters */
 
 /* poem/verse/song */
 [epub|type~="z3998:song"] p,
 [epub|type~="z3998:verse"] p{
-	text-align: left;
+	text-align: initial;
 	text-indent: 0;
 }
 
-[epub|type~="z3998:song"] p + p,
-[epub|type~="z3998:verse"] p + p{
+[epub|type~="z3998:song"] p + p{
 	margin-top: 1em;
 }
 
