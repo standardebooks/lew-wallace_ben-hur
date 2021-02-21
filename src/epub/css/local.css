@@ -2,10 +2,6 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 @namespace xml "http://www.w3.org/XML/1998/namespace";
 
-blockquote > header{
-	text-align: center;
-}
-
 q{
 	font-style: italic;
 }
@@ -15,7 +11,7 @@ table{
 }
 
 /* location-specific */
-#book-7 p:last-of-type{
+#book-8 p:last-of-type{
 	margin-top: 1em;
 	text-align: center;
 }
@@ -28,7 +24,7 @@ table{
 
 #chapter-2-7 > blockquote b,
 #chapter-6-4 > blockquote b{
-	font-size: 150%;
+	font-size: 125%;
 	text-transform: lowercase;
 }
 
@@ -37,10 +33,21 @@ table{
 	margin: 1em auto;
 	padding: .5em;
 	text-align: center;
-	width: 15em;
+	width: 20em;
 }
 
-#chapter-4-5 > blockquote p,
+#chapter-3-6 > blockquote b{
+	font-size: 125%;
+	letter-spacing: .2em;
+	text-transform: lowercase;
+	line-height: 1em;
+}
+
+#chapter-4-5 ol{
+	margin: 0;
+}
+
+#chapter-4-5 blockquote p,
 #chapter-5-7 blockquote p,
 #chapter-5-11 blockquote p{
 	text-indent: 0;
@@ -62,11 +69,12 @@ table{
 	text-align: center;
 }
 
-#chapter-4-17 blockquote header > p,
-#chapter-5-2 blockquote header,
+#chapter-5-2 blockquote[epub|type~="z3998:letter"] > header{
+	text-align: center;
+}
+
 #chapter-5-3 .stanza,
 #chapter-5-16 blockquote,
-#chapter-7-4 blockquote header,
 #chapter-8-10 blockquote:first-of-type,
 #chapter-8-10 blockquote:nth-of-type(2),
 #chapter-8-10 blockquote:nth-of-type(3),
@@ -80,7 +88,12 @@ table{
 	font-variant: normal;
 }
 
-#chapter-5-7 tr td:nth-of-type(3n){
+#chapter-5-7 tr td:first-of-type,
+#chapter-5-7 tr td:nth-of-type(4){
+	text-align: center;
+}
+
+#chapter-5-7 tr td:nth-of-type(3){
 	padding-left: 1em;
 	text-align: right;
 }
@@ -185,6 +198,15 @@ section[epub|type~="epigraph"] > *{
 	text-align: right;
 }
 
+[epub|type~="se:letter.dateline"]{
+	font-style: italic;
+}
+
+[epub|type~="se:letter.dateline"] b{
+	font-style: normal;
+}
+
+
 footer{
 	margin-top: 1em;
 	text-align: right;
@@ -195,16 +217,19 @@ footer{
 	text-indent: 0;
 }
 
+[epub|type~="z3998:salutation"]{
+	font-style: italic;
+}
+
 [epub|type~="z3998:sender"],
-[epub|type~="z3998:salutation"],
 [epub|type~="z3998:signature"]{
 	font-variant: small-caps;
 }
 /* end of letters */
 
 /* poem/verse/song */
-[epub|type~="z3998:song"] p,
-[epub|type~="z3998:verse"] p{
+[epub|type~="z3998:song"] > p,
+[epub|type~="z3998:verse"] > p{
 	text-align: initial;
 	text-indent: 0;
 }
@@ -240,14 +265,14 @@ p span.i5{
 	padding-left: 6em;
 }
 
+p span.i7{
+	text-indent: -1em;
+	padding-left: 8em;
+}
+
 p span.i8{
 	text-indent: -1em;
 	padding-left: 9em;
-}
-
-p span.i9{
-	text-indent: -1em;
-	padding-left: 10em;
 }
 
 /* elision ⋮ */
