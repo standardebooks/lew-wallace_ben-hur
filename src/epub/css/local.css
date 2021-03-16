@@ -112,6 +112,11 @@ table{
 	padding: .5em 1em;
 }
 
+#book-8 blockquote > cite + p{
+	margin-top: 1em;
+	text-align: center;
+}
+
 #book-8-10 blockquote:nth-of-type(4){
 	margin-top: 1em;
 }
