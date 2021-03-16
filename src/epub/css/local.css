@@ -11,11 +11,6 @@ table{
 }
 
 /* location-specific */
-#book-8 p:last-of-type{
-	margin-top: 1em;
-	text-align: center;
-}
-
 #chapter-2-7 > blockquote,
 #chapter-6-4 > blockquote{
 	font-variant: small-caps;
@@ -59,8 +54,13 @@ table{
 }
 
 #chapter-5-1 blockquote,
-#chapter-5-3 .stanza{
+#chapter-5-3 blockquote > div,
+#chapter-5-3 blockquote > div > header{
 	margin: 1em 0;
+}
+
+#chapter-5-3 blockquote > div > header + p{
+	text-indent: 1em;
 }
 
 #chapter-5-1 [epub|type~="z3998:salutation"]{
@@ -73,7 +73,6 @@ table{
 	text-align: center;
 }
 
-#chapter-5-3 .stanza,
 #chapter-5-16 blockquote,
 #chapter-8-10 blockquote:first-of-type,
 #chapter-8-10 blockquote:nth-of-type(2),
@@ -111,6 +110,10 @@ table{
 #chapter-6-1 table tbody td{
 	border: solid 2px;
 	padding: .5em 1em;
+}
+
+#book-8-10 blockquote:nth-of-type(4){
+	margin-top: 1em;
 }
 /* end of location-specific */
 
