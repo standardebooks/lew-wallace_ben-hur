@@ -11,6 +11,11 @@ table{
 }
 
 /* location-specific */
+#book-8 blockquote > cite + p{
+	margin-top: 1em;
+	text-align: center;
+}
+
 #chapter-2-7 > blockquote,
 #chapter-6-4 > blockquote{
 	font-variant: small-caps;
@@ -28,7 +33,7 @@ table{
 	margin: 1em auto;
 	padding: .5em;
 	text-align: center;
-	width: 20em;
+	width: 22em;
 }
 
 #chapter-3-6 > blockquote b{
@@ -112,12 +117,7 @@ table{
 	padding: .5em 1em;
 }
 
-#book-8 blockquote > cite + p{
-	margin-top: 1em;
-	text-align: center;
-}
-
-#book-8-10 blockquote:nth-of-type(4){
+#chapter-8-10 blockquote:nth-of-type(4){
 	margin-top: 1em;
 }
 /* end of location-specific */
