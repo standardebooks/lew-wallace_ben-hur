@@ -29,6 +29,13 @@
 		<link href="onix.xml" media-type="application/xml" properties="onix" rel="record"/>
 		<dc:title id="title">Ben Hur</dc:title>
 		<meta property="file-as" refines="#title">Ben Hur</meta>
+		<meta property="title-type" refines="#title">main</meta>
+		<dc:title id="subtitle">A Tale of the Christ</dc:title>
+		<meta property="file-as" refines="#subtitle">Tale of the Christ, A</meta>
+		<meta property="title-type" refines="#subtitle">subtitle</meta>
+		<dc:title id="fulltitle">Ben Hur: A Tale of the Christ</dc:title>
+		<meta property="file-as" refines="#fulltitle">Ben Hur: A Tale of the Christ</meta>
+		<meta property="title-type" refines="#fulltitle">extended</meta>
 		<dc:subject id="subject-1">Historical fiction</dc:subject>
 		<dc:subject id="subject-2">Jesus Christ -- Fiction</dc:subject>
 		<dc:subject id="subject-3">Christian fiction</dc:subject>
@@ -48,10 +55,10 @@
 		<meta property="authority" refines="#subject-6">LCSH</meta>
 		<meta property="term" refines="#subject-6">Unknown</meta>
 		<meta property="se:subject">Fiction</meta>
-		<dc:description id="description"></dc:description>
+		<dc:description id="description">A young Jewish man’s family is falsely imprisoned and he sent to the galleys; when he is released, he swears revenge on the Romans.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			<p></p>
-			<p></p>
+			&lt;p&gt;Judah and Massala are close friends growing up, though one is Jewish and the other Roman. But when an accident happens after Massala comes home after five years in Rome, Massala betrays his childhood friend and family. Judah’s mother and sister are taken away to prison, and he is sent to a galley-ship. After a ship-to-ship battle years later, Judah rescues the ship’s captain from drowning, and the tribune adopts him in gratitude. Judah then devotes himself to learning as much as he can about being a warrior, in hopes of leading an insurrection against Rome. He thinks he’s found the perfect leader in a young Nazarite, but is disappointed at the young man’s seeming lack of ambition.&lt;/p&gt;
+			&lt;p&gt;Before writing Ben-Hur, &lt;a href="https://standardebooks.org/ebooks/lew-wallace"&gt;Lew Wallace&lt;/a&gt; was best known for being a major general in the Civil War. After the war, a conversation with an atheist caused Wallace to take stock of how little he knew about his own religion. He launched into what would be years of research so that he could write with accuracy about first-century Israel. Although Judah Ben-Hur is the main character in the novel, the book’s subtitle, A Tale of the Christ, reveals Wallace’s real focus. Although sales were only a trickle at the beginning, it soon became a bestseller, and went on to become the best-selling novel of the nineteenth-century. It has never been out-of-print, and has launched two plays, five films, and a TV series to date.&lt;/p&gt;
 		</meta>
 		<dc:language>en-US</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/2145</dc:source>
