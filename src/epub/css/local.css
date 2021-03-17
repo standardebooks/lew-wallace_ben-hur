@@ -2,10 +2,6 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 @namespace xml "http://www.w3.org/XML/1998/namespace";
 
-q{
-	font-style: italic;
-}
-
 table{
 	margin: 1em auto;
 }
@@ -53,19 +49,16 @@ table{
 	text-indent: 0;
 }
 
-#chapter-4-5 > blockquote > footer{
-	margin-top: 0;
+#chapter-4-5 > blockquote > p:first-of-type,
+#chapter-4-5 > blockquote > p:last-of-type{
 	text-align: center;
 }
 
+#chapter-2-6 blockquote > header,
 #chapter-5-1 blockquote,
 #chapter-5-3 blockquote > div,
 #chapter-5-3 blockquote > div > header{
 	margin: 1em 0;
-}
-
-#chapter-5-3 blockquote > div > header + p{
-	text-indent: 1em;
 }
 
 #chapter-5-1 [epub|type~="z3998:salutation"]{
@@ -78,18 +71,13 @@ table{
 	text-align: center;
 }
 
-#chapter-5-16 blockquote,
-#chapter-8-10 blockquote:first-of-type,
-#chapter-8-10 blockquote:nth-of-type(2),
-#chapter-8-10 blockquote:nth-of-type(3),
-#chapter-8-10 blockquote:nth-of-type(4){
-	text-align: center;
-	text-indent: 0;
-}
-
 #chapter-5-2 [epub|type~="z3998:salutation"]{
 	font-style: italic;
 	font-variant: normal;
+}
+
+#chapter-5-3 blockquote > div > header + p{
+	text-indent: 1em;
 }
 
 #chapter-5-7 tr td:first-of-type,
@@ -106,6 +94,15 @@ table{
 	border-top: solid 2px;
 }
 
+#chapter-5-16 blockquote,
+#chapter-8-10 blockquote:first-of-type,
+#chapter-8-10 blockquote:nth-of-type(2),
+#chapter-8-10 blockquote:nth-of-type(3),
+#chapter-8-10 blockquote:nth-of-type(4){
+	text-align: center;
+	text-indent: 0;
+}
+
 #chapter-6-1 table{
 	border-collapse: collapse;
 	display: table;
@@ -115,10 +112,6 @@ table{
 #chapter-6-1 table tbody td{
 	border: solid 2px;
 	padding: .5em 1em;
-}
-
-#chapter-8-10 blockquote:nth-of-type(4){
-	margin-top: 1em;
 }
 /* end of location-specific */
 
@@ -272,11 +265,6 @@ p span.i5{
 	padding-left: 6em;
 }
 
-p span.i7{
-	text-indent: -1em;
-	padding-left: 8em;
-}
-
 p span.i8{
 	text-indent: -1em;
 	padding-left: 9em;
@@ -290,9 +278,52 @@ span.elision{
 /* end of poem/verse/song */
 
 /* drama */
-[epub|type~="z3998:drama"]{
+table[epub|type~="z3998:drama"]{
 	border-collapse: collapse;
 	margin: 1em auto;
+	width: 100%;
+}
+
+[epub|type~="z3998:drama"] tr:first-child td{
+	padding-top: 0;
+}
+
+[epub|type~="z3998:drama"] tr:last-child td{
+	padding-bottom: 0;
+}
+
+[epub|type~="z3998:drama"] td{
+	vertical-align: top;
+	padding: .5em;
+}
+
+[epub|type~="z3998:drama"] td:last-child{
+	padding-right: 0;
+}
+
+[epub|type~="z3998:drama"] td:first-child{
+	padding-left: 0;
+}
+
+[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
+	hyphens: none;
+	-epub-hyphens: none;
+	text-align: right;
+	width: 20%;
+}
+
+[epub|type~="z3998:stage-direction"]{
+	font-style: italic;
+}
+
+[epub|type~="z3998:stage-direction"]::before{
+	content: "(";
+	font-style: normal;
+}
+
+[epub|type~="z3998:stage-direction"]::after{
+	content: ")";
+	font-style: normal;
 }
 
 [epub|type~="z3998:persona"]{
