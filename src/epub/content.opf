@@ -48,29 +48,29 @@
 		<meta property="authority" refines="#subject-6">LCSH</meta>
 		<meta property="term" refines="#subject-6">Unknown</meta>
 		<meta property="se:subject">Fiction</meta>
-		<dc:description id="description">DESCRIPTION</dc:description>
+		<dc:description id="description"></dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			LONG_DESCRIPTION
+			<p></p>
+			<p></p>
 		</meta>
 		<dc:language>en-US</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/2145</dc:source>
 		<dc:source>https://archive.org/details/benhurtaleofchri1922wall</dc:source>
-		<meta property="se:production-notes">Any special notes about the production of this ebook for future editors/producers? Remove this element if not.</meta>
 		<meta property="se:word-count">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Ben_Hur</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/lew-wallace_ben-hur</meta>
 		<dc:creator id="author">Lew Wallace</dc:creator>
 		<meta property="file-as" refines="#author">Wallace, Lew</meta>
-		<meta property="se:name.person.full-name" refines="#author">CONTRIBUTOR_FULL_NAME</meta>
+		<meta property="se:name.person.full-name" refines="#author">Lewis Wallace</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Lew_Wallace</meta>
 		<meta property="se:url.authority.nacoaf" refines="#author">https://id.loc.gov/authorities/names/n80120828</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">ann</meta>
-		<dc:contributor id="artist">COVER_ARTIST</dc:contributor>
-		<meta property="file-as" refines="#artist">COVER_ARTIST_SORT</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">COVER_ARTIST_WIKI_URL</meta>
-		<meta property="se:url.authority.nacoaf" refines="#artist">COVER_ARTIST_NACOAF_URL</meta>
+		<dc:contributor id="artist">Alexander von Wagner</dc:contributor>
+		<meta property="file-as" refines="#artist">von Wagner, Alexander</meta>
+		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Alexander_von_Wagner</meta>
+		<meta property="se:url.authority.nacoaf" refines="#artist">https://id.loc.gov/authorities/names/n2001060991</meta>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
 		<dc:contributor id="transcriber-1">An Anonymous Volunteer</dc:contributor>
 		<meta property="file-as" refines="#transcriber-1">Anonymous Volunteer, An</meta>
