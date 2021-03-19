@@ -7,9 +7,8 @@ table{
 }
 
 /* location-specific */
-#book-8 blockquote > cite + p{
-	margin-top: 1em;
-	text-align: center;
+#chapter-5-7 table{
+	font-variant-numeric: tabular-nums;
 }
 
 #chapter-2-7 > blockquote,
@@ -20,23 +19,22 @@ table{
 
 #chapter-2-7 > blockquote b,
 #chapter-6-4 > blockquote b{
-	font-size: 125%;
+	font-size: 1.25em;
 	text-transform: lowercase;
 }
 
 #chapter-3-6 > blockquote{
-	border: solid 2px;
+	border: solid 1px;
 	margin: 1em auto;
-	padding: .5em;
+	max-width: 22em;
+	padding: 1em;
 	text-align: center;
-	width: 22em;
 }
 
 #chapter-3-6 > blockquote b{
-	font-size: 125%;
+	font-size: 1.25em;
+	font-variant: all-small-caps;
 	letter-spacing: .2em;
-	text-transform: lowercase;
-	line-height: 1em;
 }
 
 #chapter-4-5 ol{
