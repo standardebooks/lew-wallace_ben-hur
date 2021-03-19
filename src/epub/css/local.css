@@ -237,7 +237,6 @@ section[epub|type~="epigraph"] > *{
 }
 /* End full-page epigraphs */
 
-
 /* images */
 figure{
 	margin: 1em auto;
@@ -258,6 +257,7 @@ figcaption{
 /* end of images
 
 /* letters */
+
 [epub|type~="z3998:letter"] header{
 	text-align: right;
 }
