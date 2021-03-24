@@ -158,7 +158,6 @@ table[epub|type~="z3998:drama"]{
 [epub|type~="epigraph"] [epub|type~="z3998:persona"]{
 	font-style: normal;
 }
-
 /* end of drama */
 
 /* All epigraphs */
