@@ -44,7 +44,7 @@
 		<dc:subject id="subject-5">Tiberius, Emperor of Rome 42 B.C.-37 A.D. -- Fiction</dc:subject>
 		<dc:subject id="subject-6">Bible. New Testament -- History of Biblical events -- Fiction</dc:subject>
 		<meta property="authority" refines="#subject-1">LCSH</meta>
-		<meta property="term" refines="#subject-1">Unknown</meta>
+		<meta property="term" refines="#subject-1">sh85061165</meta>
 		<meta property="authority" refines="#subject-2">LCSH</meta>
 		<meta property="term" refines="#subject-2">sh85070023</meta>
 		<meta property="authority" refines="#subject-3">LCSH</meta>
