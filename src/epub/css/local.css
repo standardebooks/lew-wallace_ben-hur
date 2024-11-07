@@ -19,7 +19,7 @@ table{
 
 #chapter-2-7 > blockquote b,
 #chapter-6-4 > blockquote b{
-	font-size: 1.25em;
+	font-size: larger;
 	text-transform: lowercase;
 }
 
@@ -32,7 +32,7 @@ table{
 }
 
 #chapter-3-6 > blockquote b{
-	font-size: 1.25em;
+	font-size: larger;
 	font-variant: all-small-caps;
 	letter-spacing: .2em;
 }
