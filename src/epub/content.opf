@@ -64,7 +64,7 @@
 		<dc:language>en-US</dc:language>
 		<dc:source>https://www.gutenberg.org/ebooks/2145</dc:source>
 		<dc:source>https://archive.org/details/benhurtaleofchri1922wall</dc:source>
-		<meta property="se:word-count">199672</meta>
+		<meta property="se:word-count">199114</meta>
 		<meta property="se:reading-ease.flesch">69.92</meta>
 		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Ben-Hur:_A_Tale_of_the_Christ</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/lew-wallace_ben-hur</meta>
