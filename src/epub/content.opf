@@ -37,7 +37,7 @@
 		<meta property="title-type" refines="#subtitle">subtitle</meta>
 		<dc:title id="fulltitle">Ben Hur: A Tale of the Christ</dc:title>
 		<meta property="file-as" refines="#fulltitle">Ben Hur: A Tale of the Christ</meta>
-		<meta property="title-type" refines="#fulltitle">extended</meta>
+		<meta property="title-type" refines="#fulltitle">expanded</meta>
 		<dc:subject id="subject-1">Historical fiction</dc:subject>
 		<dc:subject id="subject-2">Jesus Christ -- Fiction</dc:subject>
 		<dc:subject id="subject-3">Christian fiction</dc:subject>
