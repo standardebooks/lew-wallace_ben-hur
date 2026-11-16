@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" style="stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 895 469">
 	<title>A map of prison rooms showing five individual square rooms in a horizontal line, with a passage above them the width of all five rooms combined, and a sixth room below the five the full width of all five.</title>
-	<path d="M 4.4527499,145.9835 H 181.61775 v 177.165 H 4.4527499 Z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
-	<path d="M 4.7187499,4.4865023 H 890.54575 V 146.2185 H 4.7187499 Z" style="fill:none;stroke:#000000;stroke-width:8.33300018;"/>
-	<path d="M 4.7187499,322.7815 H 890.54575 v 141.732 H 4.7187499 Z" style="fill:none;stroke:#000000;stroke-width:8.33300018;"/>
-	<path d="m 182.00475,145.9835 h 177.165 v 176.851 h -177.165 z" style="fill:none;stroke:#000000;stroke-width:8.32999992;"/>
-	<path d="m 359.37575,145.9835 h 177.165 v 176.851 h -177.165 z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
-	<path d="m 536.54875,145.9835 h 177.165 v 176.851 h -177.165 z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
-	<path d="m 713.37975,145.9835 h 177.165 v 176.851 h -177.165 z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
-	<path d="m 84.03575,132.2535 v 29.527 m 18,-29.527 v 29.527 m -18,146.473 v 29.527 m 18,-29.527 v 29.527 m 159.552,-205.527 v 29.527 m 18,-29.527 v 29.527 m 336.544,-29.527 v 29.527 m 18,-29.527 v 29.527 m 158.831,-29.527 v 29.527 m 18,-29.527 v 29.527 m -372.005,-29.527 v 29.527 m 18,-29.527 v 29.527" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="M4.45275 145.9835H181.61775v177.165H4.45275Z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="M4.71875 4.4865H890.54575V146.2185H4.71875Z" style="fill:none;stroke:#000000;stroke-width:8.33300018;"/>
+	<path d="M4.71875 322.7815H890.54575v141.732H4.71875Z" style="fill:none;stroke:#000000;stroke-width:8.33300018;"/>
+	<path d="m182.00475 145.9835h177.165v176.851h-177.165z" style="fill:none;stroke:#000000;stroke-width:8.32999992;"/>
+	<path d="m359.37575 145.9835h177.165v176.851h-177.165z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="m536.54875 145.9835h177.165v176.851h-177.165z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="m713.37975 145.9835h177.165v176.851h-177.165z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="m84.03575 132.2535v29.527m18-29.527v29.527m-18 146.473v29.527m18-29.527v29.527m159.552-205.527v29.527m18-29.527v29.527m336.544-29.527v29.527m18-29.527v29.527m158.831-29.527v29.527m18-29.527v29.527m-372.005-29.527v29.527m18-29.527v29.527" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
 	<text style="font-weight:bold;font-size:53.33333206px" x="322.73642" y="89.037407">Passage</text>
 	<text style="font-weight:bold;font-size:53.33333206px" x="72.397232" y="254.0061">V</text>
 	<text style="font-weight:bold;font-size:53.33333206px" x="237.70964" y="248.48251">IV</text>

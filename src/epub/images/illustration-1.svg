@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" style="stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 895 327">
 	<title>A map of prison rooms showing five individual square rooms in a horizontal line, with a passage above them the width of all five rooms combined.</title>
-	<path d="m 4.4535,145.666 h 177.165 V 322.831 H 4.4535 Z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
-	<path d="m 4.7195,4.1689978 h 885.827 V 145.901 H 4.7195 Z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
-	<path d="m 182.0055,145.666 h 177.165 v 176.851 h -177.165 z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
-	<path d="m 359.3765,145.666 h 177.165 v 176.851 h -177.165 z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
-	<path d="m 536.5495,145.666 h 177.165 v 176.851 h -177.165 z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
-	<path d="m 713.3805,145.666 h 177.165 v 176.851 h -177.165 z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
-	<path d="m 84.0365,131.936 v 29.527 m 18,-29.527 v 29.527 m 159.552,-29.527 v 29.527 m 18,-29.527 v 29.527 m 336.544,-29.527 v 29.527 m 18,-29.527 v 29.527 m 158.831,-29.527 v 29.527 m 18,-29.527 v 29.527 m -372.005,-29.527 v 29.527 m 18,-29.527 v 29.527" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="m4.4535 145.666h177.165V322.831H4.4535Z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="m4.7195 4.169h885.827V145.901H4.7195Z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="m182.0055 145.666h177.165v176.851h-177.165z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="m359.3765 145.666h177.165v176.851h-177.165z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="m536.5495 145.666h177.165v176.851h-177.165z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="m713.3805 145.666h177.165v176.851h-177.165z" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
+	<path d="m84.0365 131.936v29.527m18-29.527v29.527m159.552-29.527v29.527m18-29.527v29.527m336.544-29.527v29.527m18-29.527v29.527m158.831-29.527v29.527m18-29.527v29.527m-372.005-29.527v29.527m18-29.527v29.527" style="fill:none;stroke:#000000;stroke-width:8.32999992"/>
 	<text style="font-weight:bold;font-size:53.33333206px" x="72.124542" y="253.68858">V</text>
 	<text style="font-weight:bold;font-size:53.33333206px" x="328.06268" y="88.550621">Passage</text>
 	<text style="font-weight:bold;font-size:53.33333206px" x="235.79633" y="253.5316">IV</text>
